@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/page.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">class central</a>
+          </div> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul id="nav" class="item1">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Analysis</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Student Voices</a></li>
+                    <li><a href="#">Rankings</a></li>
+                    <li><a href="#">Year In Review</a></li>
+                    <li><a href="#">Providers</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p>
+                Disclosure: Class Central is learner-supported. When you buy through links on our site, we may earn an
+                affiliate commission.
+            </p>
+            <h3><a>COURSE REPORT</a></h3>
+            <h1>Class Central’s Best Online Courses of the Year (2022 Edition)</h1>
+            <p>
+                Class Central’s list of the highest-rated free online courses of the year
+            </p>
+        </div>
+        <div class="col-sm-12">
+            <div class=" col-sm-6 author">
+                <div><a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAP9ElEQVRoQ9VaeXBV53U/d3uLNmOBTIy1swiQcGwWIxAQsNsm3kiTMeMAE7A1XjLtTOvOGJOAG0iMW8f2MEmntc1i4gTHS4gzpNhJ2iYDBmOMjEDsxQgBNmBhQAI9Sbzlvnv7O+e79+npaUHI+aff8Ljv3fvd7zu/s5/zSaPBDQ2vufj4V8sqnV1JhjsF9ya7rjtWI7fEdbVhmJGt5roRl7QWzXVPuRod1YkOaC59GD+54xCeOx4ZuN3r4L36GvKMCRnoyJzrDi+aXBWl6Hc00uZGzCETQKyjaToTZaYtyiDw0XwifQbgruOE7eajum5sNpLD3249s51B+c/9/XwQ/rUHHQMF4nM9RVt4xJTpiXB4qU76vaBGdxwHczym6gbPS+dgF0GuN0lzk5giwDRyeK5FrglB0uaAbv9rZ9OH+3DPJlqJOSv5eaZE0sEMWCJ4aRI4XO9kFVUMd5O5qy3LeqDTsJhiF+oBbeG1hCAiBaTHRt3EzoC0JOZoGoDwMi6A8Gua5dhk6PrrlpFY1tK4+3NeuBcg6XsMCEiKm0bp9IesgPUzNxbI4+1dM8H0a46b7Evk/eq0/5AZIYRqcf4fqglGaGSQY3UA12Pxpq1vpC2UqR2p3wOxEW1YUflLbcHC78mC8QAlk7brGLZmGLxpf3bYK5ZuL6Re1+JCC4Aom3IteTngfrq+/eRJtXf30X2dvtjm3w+N/qutiYQ9G2ptg2hd12K8ISQRUFOUKg1iiE3BgXm2JarFQHSPuUrS+O0auvk/nbck76Nt22BbKWcg7/sbZ0rEt4cErxGsqNrh2jdNB3/ALhss0nRDj8m7DIR1y4UzUjZyvUMB8IB4NiKEewslocFMnh7Ff6Gge/7DcI71N+cPHLjK28uravRqI2LAPDE0+us74I2mO/CRvJrp2rKDZUQJ98mKOzRkyBDKDkK3edUBYFHAlYnzlX878NSsorG4Sy0tLRQ3QrJeXPc8OGzGhSHiFWiDvjXWuPUuDwDT06tE+AGjTA4rKn2l1Sh/HG9excwQGzWAyPsMJBaLUUFWHp07eRJOsjWNL94W/V18PoqCMhpfNS0aXl5OERsgsWGMjZ6nABDogH/XkrhvDYm1rr9w5sCjTAo+TJTEndSykyZNMuvr6xNG6Yz5uqG94STZIHSZwAvrnvpYicuUk5NDzceP0FPLfkDVd4zvlWylFl2D10gkEgTXLRKAkOE0kuyuREInGk/TkiVL6MYRZfI7ouey5F0WHgKmDs/iOkkEXIJ31vTF0RNbf+nFGd6EBSyD5ZgcVlFxc7t78/9ig1wASeAFRmKkAylAwnHm+HF66qknaMWKJRQYrK2n6wW+Q1vpnXfepYXzH6KRt95KJy5eFcAMSoKNbopRIWiBJr0j105WXDy9g+OM8nb4gJR5uGxK5pTO+FXCDS9wGLoVsSERU3OzJOAZjrKF8qFZdGTvXtr4i1do/vwH4LT8NImJcZQDyDB+CTgZEpJ4wXLRdZFUwLRo7549NLn6Lhp/223U2KaJxETfNZAACiAYWQg7wOdE345+9tF8X+YAMhvS2GZnlcyc6DqJetfIdeFuNQpGHMMwdXLCQpjpsiMjKsw16fjBg7R+7c9o8eKFZChGDWJ05YeicvBWdXV1VD3j61Q1cSIda3UEiOExwEV8gX5Ax2EwSIksG+8Ejeq24x/sYUGkbEQrrtkUMAN/CzeejMdjpoY8QXQZ2qeAsAsHkGyNjh86RK+tWU2LahexqvcY585+TpFIhILBYLdnzP3ikqLu8/1MSnNo986dNO1r91DlV79Kn7SZyja9OCPfGYNuYhk97sRjAejY72Onds71VYsKy2dNaLUC9Z2dnUYgEARgBwrjwEJApWdGPpDiXIOOMZCXX+wVyJXLbZQ/NL9XCVlQnzNnztANN9xAVgCK4IPgNA0B/eNdu2jqrLupCkAa2wNk23YKiL8g9Itgu0ndTRowAScvro2/eG7nCZFIwciJq9oob5l4BfaI0EHfm/Bz0XFSEinP1QXIz195kRbXPtRrIbBv30Fqb2/vYRf8fnV1NYw4LanHvSSCuAGt2fPRR3THzG8IkOMRS2wufaTbmqSbeB7QOp7tPLl3hRh7QfnEfW1aXhUDQfLBIYutqtsi1wNkQAaTtrwPpH73bprCNuKpls/E/tbTk237Yp82TNECJdXjSDMOKh2Cd5BcJ5UnpBy0Cx3mMSqHRCLr17xItbW1PQqFAYHImMRATLBuD4DcUTNwICwVVn9kHxM0q2zGYyB/DVd3wgHNTI+91wRis1oYLGYSdXruueeuieXy5cu0dOlSKvEMf7BAxMi5MnP1x7Vgac3LMDVOk7lq0wDE80MKD1dOPJK6SlHGZCsbWbPueap9qBbBA3Ui3mAgHR0d9PDDD/cLJCsri44ePUobN26ksWPHqLUHKRFFoJOEFWxgINtB6gzckuQQ/tqTyMCAAMY1JXCtCV8KiCogd2iB0poT+FLq5a8GgHj7dgdiG0oiFVnKRtathY08XAtmdAcygCS4B64vAwQWwoSdYyBtAIIMSkIoVOv/HRB4ZbcTqjUr3VmnOUX11fFsJGH2IRHYiAzPhmJeJyjoiebzFmU/5hCXsiyN4PRkoFDzvpkqjgzCa8m2UhgjWARLZ8LIu9L5LrlfPxAEUoqhTOA3d/7pfdqwYQP99vcHKR6PU2lVHj3yyCP06APzENlzyfRUlRPvLwtEGAOJcGU0hC1GGJUa1wvEexE52erVq+mlJUvp8e8V0923BigcDlPDOaKnnz5IF/MLaP/+/TTi5q+kdnI4y4WPud444ksE1wgDgbFT+V8KyB//8B7de+/99Kd136ZRo0bRjVf3SjF1ySiSbHbhj47TiBEj6K3XN4oiSLrFCeHggbByfcaqtRUrzh40ENUwTAXO79wzh4qKiuiFBZ9ILmTE0Tvg7oWp6pT65jn03cUv0R+OHKUxY8ag/OO6o2dkb7yianauIfsbsBGe8IEWLJv1H/j6d4MF4qAnwUkgN2/a2zupfFgOrVq1kh6b8q7YRjip6piYalNRU+zbdM/cZ+n197dTTU3NXwIIL/uKFiqb+SjYuRa5lLKRVDNAcYJTSB59ei2PXa6XHc+9cw6NGzeOnv3mYZGARRG1DoXk939eWECLFi+hXQcOUVWVqvdFIsi365BrVU//Bo1H0tiEClGeeRJPa5h4O6rn3EtAzfioFhg5u0qzkwf5Dga01m+kDwyI+FYmVOdMQaNtW7bQ3G/Oo4//fRhVVFSQ7lwR1fKB3P8vHZLovfNf+ynANQmGbaO9hK+DBJJEQT+ZYZm5paMbonrBeFV3WNIYY/8sHPF0VHW1iIpvyqLTDQ20/uUXaPGihUCgGnZJUp1H1vmfvPA8/dvSH9E//sMTVDk+SNnZqPO/uEqbN2+mvccu0E5UghNGFqFWlzekbuE2Vl3dfqqZNofGomY/dUXVP3ZKIp4gMi559oX9LZ8duU3kk1cy+sdRs2A5tyvR1JV7fQG5KU+n80j6Vj79BC1fthSdCxXYkpCkdPbwOXjkMN1ZdTvVTK6hhob35XQkq7iATp26QOveeIcefPBbFMY9P3rBmaGSIPrNb7bQ/AcX9wnEb2qkNzJy4s2rLp899s9CdH5xTWXEtBpQE2O5hDom8HuxXtzvspWExIXoiUO04oc/pKqRZdIFSTiAhNI0LztEh7iCfOZJevPNH9NY+y2535oznV599TVqzv97uu+++8hOqnYPl648TjVfkhIA/RSRUEwPeocOShX8rksq1PF5EgwztzN6W+v5PYcYCM90zJFf+x0yWRTy6F2K0Sv9RTqsWpu+0RtoC8EubsH1bFMTRKHaROibC4v9SrKmJEI//elzNDH0rsw/Z9xO69evo1W/zZZ4QlpCtY38Gs7KohuHDydbC6pOI4CIpLG/1wP2rkIIrFl6w5vtpg++JTiFaDwI33LHNDQoPkyYXKgIEHnD54RXIJINnWNCQmidchMhYKhmNh/b8BhiZNPFixfp9tB2euaZZTTF+CO7JboQupV+/tpG+v6WCTS+spIuuJdU840NHQETLSjpvMB/SfxJaqqLwuVeuioxW5nxFnWgKexOv3p6Xx3T76ckLN9kqHDKr5IBYwE/6A+IKvo7xfvoMMZMIFwB3lO2n5YtW06TQn9GEIlRC4BsRDT/p7crqLC0lJrtL+T9rv6eVzawrQlj1DW9TOAzR/7H/aCgHn2zo+ljeJuuTiMzkvXICY+oLLSD+UfxLOxqYsQQvNdM9nSLL8ro0DACICZGOOt5hxti2XTlyhVaVFlHy5c/TZ+15klgrCxrpV9v+jU9uT6PCgsL6VPq9AhV7jHVv/Ibcti3t/4x94OxZ1vYjIxub9zHeaK4tzSJ8KHjSgqUzVwAPvySEBckrriwEgyf876tqPIWTZfUxspd5tt5dL65mZ688zTNnDmLVrzwO0R8omeWTaazZ8/SD34xFLV6CZ12O0RFVbbVHYisCYmkD78VJM8c97vxk9v4SC6Vv/hA/CMFqRvzC8vWRoKltSxHHCdwF0qGLOypEvCpc46Udqpt5awDqsSSsr/4Ar2mAuneXwEILTcXzz0CuffHkvXOUH2i+aBHAfFI8w9etHgU90ND45de/fz0scfSQaRLRDFFDUlIzfLZ/42w8tcAwtJMnZ3zOSWPpJeS+K+lcII4dsemaQoA5no0GkVQzJarbSvJ+U0Nn86uGKGAiOsUQML0KA5L+QRoe6Jx15wMEDIhrf6Q9T0vNlunUWfA2+CfA+7QGtxPAI2X9nV5EXHL12g+pOu5T6x/9aXgX313nM4Uh65GId1Q0IzXdX6yb1qmJPzfmUC8NSsRFA7HUVAEQ87N7+HmXVicz/L4VF/OS3wm+EB6M0yZlHaccC0gSh38uKHe1RCv0KzeHv1kZ6YkUvh7k4j/EPpTic9hyYYKisetjeg3PoKFuQLyz0CECX1JJBNYN66niUJClgpcctcDAqbpIV5jaPLshubTx/iozTfsXguUPiTCS84DkAt4vk18baBo6oNg0RrNMPMgarh07hMjuQW/hAAlpR6jL0l1sdMjwWt0ekD4wK0D2zweb9r2ZhoIhbW3fXrdveumf+AoATN/1NRb4rbxPGieb1vesbSXymSu01uC1xvgVLOcz6GwcBB2nYjbbxuW+/3oqYZTeCeT2YMC4tPnHwXLIuHC6qkUNpcjCt7v52Ri+OlxpQ8JZUrO+wsOli7O7ei9sBH9SaSxbhe20WnePI02bRIvmsaoLwUkbZ1JkFK92E7+V6aOj2drC9F+vZuM3NsTCRy+62hW4iQGjzk1sDII94lIqWOu3bIfTN9CidBbLc0fH07byE9o/eqgX+Xpx0Z6qnvGnfR3tUBxzVjdsKYhUE4B/8bCnkowfyiA8B+e8VyueS/hyxkw+DACUx3+jmJ3vHHrMQ80wJfCW2bjUQE+2/y/Curd+DKI+T/1lQgXmss6VAAAAABJRU5ErkJggg=="
+                            width="40" height="40"></div>
+                <div class="author_details">
+                    <div>Dhawal Shah</div>
+                    <div>December 27th, 2021</div>
+                </div>
+            </div>
+            <div class="nav navbar-nav navbar-right">
+                <ul>
+                    <li><a class="fa fa-twitter"></a></li>
+                    <li><a class="fa fa-facebook"></a></li>
+                    <li><a class="fa fa-google"></a></li>
+                    <li><a class="fa fa-linkedin"></a></li>
+                    <li><a class="fa fa-facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="col-sm-8">
+                <div class="content">
+                <img class="img-rounded"
+                    src="https://www.classcentral.com/report/wp-content/uploads/2021/11/2022-best-courses-banner.png"
+                    alt="Never stop learning." width="600" height="400">
+                </div>
+
+                <div>
+                    <p>
+                        Like every year, Class Central has compiled the best online courses of the year, based on thousands of learner reviews. Here are previous editions of the ranking: 2015, 2016, 2017, 2018, 2019, and 2020.
+                    </p>
+                    <P>
+                        A decade has gone by since MOOCs’ popularization. The MOOC ecosystem has now reached over 220M learners worldwide and close to 19.4K courses. You can find our end-of-year series here, including our 2021 review of MOOCs stats and trends.
+                    </P>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h2>Related</h2>
+                <ul>
+                    <li><a>1000+ Free Developer and IT Certifications</a></li>
+                    <li><a href="">[2023] 700+ Free Google Certifications</a></li>
+                    <li><a href="">[2023] 1000+ Free Digital Marketing Certificates & Badges</a></li>
+                    <li><a href="">Free Online Learning Due to Coronavirus</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
